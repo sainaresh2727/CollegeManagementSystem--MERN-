@@ -1,0 +1,59 @@
+let Mongoose=require('mongoose')
+let StudentSchema=new Mongoose.Schema({
+    StudentName:{
+        type:String,
+        required:true
+    },
+    StudentAge:{
+        type:Number,
+        required:true
+    },
+    StudentBranch:{
+        type:String,
+        required:true
+    },
+    StudentGender:{
+        type:String,
+        required:true
+    },
+    StudentCurrentYear:{
+        type:Number,
+        required:true
+    },
+    StudentDob:{
+        type:String,
+        required:true
+    },
+    StudentBldGrp:{
+        type:String,
+        required:true
+    },
+    StudentMothersName:{
+        type:String,
+        required:true
+    },
+    StudentFathersName:{
+        type:String,
+        required:true
+    },
+    StudentAddress:{
+        type:String,
+        required:true
+    },
+    StudentTotalFess:{
+        type:Number,
+        required:true
+    },
+    StudentRemainingFees:{
+        type:Number,
+        required:true
+    },
+     TotalArrears:{
+        type:String,
+        required:true
+    }
+})
+
+let StudentModel=Mongoose.model("StudentDetails",StudentSchema)
+
+module.exports=StudentModel

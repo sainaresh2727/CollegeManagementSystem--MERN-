@@ -1,0 +1,240 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+
+/*================= NAVBAR CSS STARTS=========== */
+#NavbarContainerFluid{
+  background: linear-gradient(135deg, #c2b7f3, #cac7eb,#c2b7f3);
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+#NavbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#BrandName{
+    display: flex;
+    align-items: center;
+}
+#BrandName h3{
+    font-style: italic;
+    margin: auto 0px;
+    color: #5c4ce6;
+    font-weight: bold;
+}
+#Links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.View
+{
+    margin: auto 0px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color:#5c4ce6;
+}
+#TooglerIcon button{
+    margin:  auto 0px;
+}
+.navbar-toggler-icon{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ 
+}
+/*================= NAVBAR CSS ENDS=========== */
+/* =================STUDENT NAVBAR CSS STARTS=========== */
+#StudentNavbarCf{
+    padding: 8px 5px;
+    background: linear-gradient(135deg, #c2b7f3, #cac7eb,#c2b7f3);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+#StudentNavbarContainer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.StudentsNavbarLink{
+    text-decoration: none;
+    color:#5c4ce6;
+    font-style: italic;
+    font-weight: bold;
+    margin: auto 0px;
+}
+#BrandStudent h1
+{
+    margin: auto 0px;
+    color: #5c4ce6;
+    font-style: italic;
+    font-weight: bold;
+}
+#StudentToggler button{
+    margin: auto 0px;
+}
+#SearchStudent i{
+    margin: auto 0px;
+    font-size: 25px;
+    color: #5c4ce6;
+    font-weight: bold;
+}
+/* =================STUDENT NAVBAR CSS ENDS=========== */
+/* ==========STUDENT COLLECTING DETAILS CSS STARTS======== */
+#StudentImage{
+    overflow: hidden;
+}
+#StudentImage img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    transition: 2s;
+}
+#StudentImage img:hover{
+    transform: scale(0.5);
+}
+#StudentCard{
+    height: 75vh;
+    border: none;
+    overflow-y: auto;
+    
+}
+#CardForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#StudentCard h4{
+    color: #5c4ce6;
+    font-style: italic;
+    font-weight: bold;
+}
+#CardForm label{
+    color: #5c4ce6;
+    font-style: italic;
+    font-weight: bold;
+}
+#CardForm input,select,textarea{
+    border-radius: 20px !important;
+    box-shadow: 0px 0px 20px #968cee;
+}
+/* ==========STUDENT DETAILS CSS ENDS======== */
+
+#StudentMap{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#StudentMap video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    object-fit: cover;
+}
+.Shadow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background: rgba(29, 27, 27, 0.699);
+    z-index: 1;
+}
+#StudentMapmCon{
+    position: relative;
+    z-index: 1;
+}
+#TableMapStu th{
+    color: white;
+    font-weight: bold;    
+}
+#TableMapStu td{
+    color: white;
+    font-weight: bold;
+}
+/*=========== STUDENT FULL DETAILS CSS STARTS======= */
+#StudentDetailsConf{
+    background-color: #dfddf8;
+}
+#StudentsFullDetails td{
+    color: #5c4ce6;
+    font-style: italic;
+    font-weight: bold;
+}
+.StudentsFullDetailsKey{
+    font-weight: bold;
+    white-space: nowrap;
+}
+.HrLine{
+    margin: 0px auto;
+    background-color: #5c4ce6;
+    height: 3px;
+    width: 130px;
+    border-radius: 50%;
+}
+#StudentDetailsTable{
+    box-shadow: 0px 0px 30px #5c4ce6;
+    background-color:#dfddf8;
+}
+/*=========== STUDENT FULL DETAILS CSS ENDS======= */
+/* ===========STUDENT UPDATE CSS STARTS======== */
+#StudentUpdateCard{
+    height: 75vh;
+    border: none;
+    overflow-y: auto; 
+}
+#UpdateStudentForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* ===========STUDENT UPDATE CSS ENDS======== */
+
+/* ==============TEACHER DETAILS CSS STARTS=========== */
+#TeacherDetailForm{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+#TeacherDetailsCard{
+    height: 75vh;
+    border: none;
+    overflow-y: auto;
+}
+#TeacherDetailForm input,select,textarea{
+    border-radius: 20px !important;
+    box-shadow: 0px 0px 20px #968cee;
+}
+#TeacherImage img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+#TeacherDetailsCard h4{
+    color: #5c4ce6;
+    font-style: italic;
+    font-weight: bold;
+}
+#TeacherDetailForm label{
+    font-style: italic;
+    font-weight: bold;
+    color: #5c4ce6;
+}
+/* ==============TEACHER DETAILS CSS ENDS=========== */
+#UpdateTeachersCardIp{
+    height: 70vh;
+    overflow-y:auto ;
+}
+#UpdateTeachersCardIp h4{
+    color: #5c4ce6;
+    font-weight: bold;
+}
