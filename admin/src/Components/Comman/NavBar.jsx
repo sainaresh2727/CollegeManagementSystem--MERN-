@@ -7,7 +7,8 @@ function NavBar() {
   <div className="container" id='NavbarContainer'>
   
   <div id='BrandName'>
-  <h3>SAI INSTITUDE & TECHNOLOGY</h3>
+  <h3 className='d-none d-lg-flex'>SAI INSTITUDE & TECHNOLOGY</h3>
+  <h3 className='d-flex d-lg-none'>SIT</h3>
   </div>
 
   {/* ONLY VISIBLE FOR LARGE SCREENS */}
@@ -15,7 +16,7 @@ function NavBar() {
   <Link to={'/ViewStudents'} className='View'>VIEW STUDENTS</Link>
   <Link to={'/ViewTeachers'} className='View'>VIEW TEACHERS</Link>
   </div>
-  
+  z
   {/* ONLY VISIBLE FOR SMALL SCREENS */}
   <div className='d-flex d-lg-none' id='TooglerIcon'>
   <button class="navbar-toggler" type="button" data-bs-toggle='offcanvas' data-bs-target='#NavbarOffcanvas'>

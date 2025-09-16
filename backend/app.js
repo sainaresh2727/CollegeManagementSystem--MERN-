@@ -143,7 +143,7 @@ App.delete('/DeleteTeachers/:id',async (req,res) => {
     }
 })
 
-App.listen(process.env.PORT,()=>{
+App.listen(process.env.PORT || 8000, "0.0.0.0", () => {
     console.log("SERVER RUNNING SUCCESSFULLY");
     
-})
+});

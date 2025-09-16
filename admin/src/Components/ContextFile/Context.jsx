@@ -23,7 +23,7 @@ function Context({children}) {
   async function SendingStudentRecords(e) {
   e.preventDefault();
   try {
-    let StudentRecords = await axios.post("http://localhost:8000/addStudent", {
+    let StudentRecords = await axios.post("https://collegemanagementsystem-mern.onrender.com/addStudent", {
       StudentName,
       StudentAge,
       StudentBranch,
@@ -64,7 +64,7 @@ function Context({children}) {
 let [StudentsRecords,setStudentsRecords]=useState([])
 async function StudentDetails() {
   try{
-      let StudentDetails=await axios.get('http://localhost:8000/GettingStudent')
+      let StudentDetails=await axios.get('https://collegemanagementsystem-mern.onrender.com/GettingStudent')
       setStudentsRecords(StudentDetails.data.data)
   }
   catch(err){
@@ -130,7 +130,7 @@ function UpdateFind(id){
 async function UpdateStudent(e) {
   e.preventDefault()
   try{
-    let UpdateStudent= await axios.put(`http://localhost:8000/UpdateStudent/${Uid}`,{
+    let UpdateStudent= await axios.put(`https://collegemanagementsystem-mern.onrender.com/UpdateStudent/${Uid}`,{
       StudentName:UStuName,
       StudentAge:UStuAge,
       StudentBranch:UStuBranch,
@@ -158,7 +158,7 @@ async function UpdateStudent(e) {
 //FUNCTION FOR DELETE
 async function DeleteStudent(id) {
   try{
-    let DeleteStudent= await axios.delete(`http://localhost:8000/DeleteStudent/${id}`)
+    let DeleteStudent= await axios.delete(`https://collegemanagementsystem-mern.onrender.com/DeleteStudent/${id}`)
     alert(DeleteStudent.data.message)
     StudentDetails()
   }
@@ -189,7 +189,7 @@ let StudentRecordsLower=StudentsRecords.filter((x,y)=>{
     async function TeachersData(e) {
       e.preventDefault()
       try{
-        let TeachersData=await axios.post('http://localhost:8000/TeacherAdd',{TeachersName,TeachersDept,TeachersAge,TeachersQualification,TeacherAddress,TeachersDob,TeacherGender,TeacherBloodGrp,TeacherSalary,})
+        let TeachersData=await axios.post('https://collegemanagementsystem-mern.onrender.com/TeacherAdd',{TeachersName,TeachersDept,TeachersAge,TeachersQualification,TeacherAddress,TeachersDob,TeacherGender,TeacherBloodGrp,TeacherSalary,})
         alert(TeachersData.data.message)
         setTeachersName('')
         setTeachersDept('')
@@ -210,7 +210,7 @@ let StudentRecordsLower=StudentsRecords.filter((x,y)=>{
   let [TeacherRecords,setTeacherRecords]=useState([])
   async function TeacherDetails() {
    try{
-     let TeachersDataBk= await axios.get('http://localhost:8000/GetTeacher')
+     let TeachersDataBk= await axios.get('https://collegemanagementsystem-mern.onrender.com/GetTeacher')
      setTeacherRecords(TeachersDataBk.data.data)
    }
    catch(err){
@@ -263,7 +263,7 @@ let StudentRecordsLower=StudentsRecords.filter((x,y)=>{
   async function UpdateTeachers(e) {
     e.preventDefault()
     try{
-      let UpdatedTeachers=await axios.put(`http://localhost:8000/UpdateTeachers/${UpdateTeachersId}`,{
+      let UpdatedTeachers=await axios.put(`https://collegemanagementsystem-mern.onrender.com/UpdateTeachers/${UpdateTeachersId}`,{
         TeachersName:UptechName,
         TeachersAge:UptechAge,
         TeachersDept:UptechDept,
@@ -285,7 +285,7 @@ let StudentRecordsLower=StudentsRecords.filter((x,y)=>{
   // ASYN FUN TO DELETE
   async function TeachersDelete(id) {
     try{
-      let DeleteTeacher=await axios.delete(`http://localhost:8000/DeleteTeachers/${id}`)
+      let DeleteTeacher=await axios.delete(`https://collegemanagementsystem-mern.onrender.com/DeleteTeachers/${id}`)
       alert(DeleteTeacher.data.message)
        TeacherDetails()
     }
